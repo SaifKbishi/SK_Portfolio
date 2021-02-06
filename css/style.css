@@ -71,7 +71,7 @@ main section:nth-child(odd){
 
 .profileImage img{
  width: 20rem;
- height: 20rem;
+ height: 100%;
 }
 #hero{
  display: flex;
