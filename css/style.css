@@ -1,0 +1,385 @@
+@import 'utilities.css';
+
+*{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+html{font-size: 10px;}
+body{
+ background-color: var(--background);
+ line-height: 1.6;
+ color: var(--whitesmoke-color);
+}
+ul{
+ list-style: none;
+}
+a{
+ color: var(--footer-bg);
+ text-decoration: none;
+}
+h1,h2{
+ font-weight: 300;
+ line-height: 1.2;
+}
+p{
+ margin: 10px 0;
+}
+img{
+ width: 100%;
+}
+main section:nth-child(odd){
+ background-color: var(--primary-color);
+}
+/*navbar*/
+.navbar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ /*background-color: #333;*/
+ background-color: var(--primary-color);
+ color: var(--whitesmoke-color);
+ opacity: 0.8;
+ width: 100%;
+ height: 70px;
+ position: fixed;
+ top: 0px;
+ padding: 0 30px;
+ transition: 0.5s; 
+}
+
+.navbar.top{
+ background: transparent;
+}
+
+.navbar a{
+ color: var(--whitesmoke-color);
+ padding: 10px 20px;
+ margin: 0 5px;
+ font-size: 1.6rem;
+}
+.navbar a:hover{
+ border-bottom: var(--primary-color) 2px solid;
+}
+.navbar ul{
+ display: flex;
+}
+.navbar #logo{
+ width: 8rem;
+ height: 4rem;
+}
+
+.profileImage img{
+ width: 20rem;
+ height: 20rem;
+}
+#hero{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ text-align: center;
+ margin-top: 15rem;
+ color: var(--whitesmoke-color);
+}
+#hero h1{
+ font-size: 5rem;
+ padding: 20px 0;
+}
+#hero h2{
+ font-size: 2rem;
+ padding: 10px 0;
+}
+section{
+ min-height: 51vh; 
+ text-align: center;
+}
+
+/*skills*/
+#skills{
+ display: grid;
+ align-items: center;
+ justify-content: center; 
+ grid-gap: 1rem;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ height: 100%;  
+}
+#skills{
+ text-transform: capitalize;
+ font-size: 2rem;
+}
+.skills_fast-learner   {grid-column: 1 / span 1 ; grid-row: 2 / span 1;}
+.skills_problem-solver {grid-column: 2 / span 1 ; grid-row: 2 / span 1;}
+.skills_team-work      {grid-column: 3 / span 1 ; grid-row: 2 / span 1;}
+.skills_communication  {grid-column: 4 / span 1 ; grid-row: 2 / span 1;}
+.skills_mentor         {grid-column: 5 / span 1 ; grid-row: 2 / span 1;}
+.skills{
+ border: none;
+ border-left: 1px solid #757575;
+ margin-bottom: 0px;
+ background-color: var(--background);
+ padding-top: 20px;
+ padding-bottom: 20px;
+ box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.skills:hover{
+ border-left: 3px solid #757575;
+ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+/*languages*/
+#languages{
+ display: grid;
+ align-items: center;
+ justify-content: center; 
+ grid-gap: 1rem;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr 1fr;
+ height: 100%;
+ text-transform: capitalize;
+ font-size: 3rem;
+ padding: 2rem;
+}
+#languages i{
+ padding: 1rem;
+}
+.headings            {grid-column: 1 / span 5 ; grid-row: 1 / span 1;}
+.languages-HTML5     {grid-column: 1 / span 1 ; grid-row: 2 / span 1;}
+.languages-JavaScript{grid-column: 2 / span 1 ; grid-row: 2 / span 1;}
+.languages-NodeJS    {grid-column: 3 / span 1 ; grid-row: 2 / span 1;}
+.languages-ReactJS   {grid-column: 4 / span 1 ; grid-row: 2 / span 1;}
+.languages-MongoDB   {grid-column: 5 / span 1 ; grid-row: 2 / span 1;}
+.languages-CSS3      {grid-column: 1 / span 1 ; grid-row: 3 / span 1;}
+.languages-Sass      {grid-column: 2 / span 1 ; grid-row: 3 / span 1;}
+.languages-Less      {grid-column: 3 / span 1 ; grid-row: 3 / span 1;}
+.languages-MySql     {grid-column: 4 / span 1 ; grid-row: 3 / span 1;}
+.languages-JQuery    {grid-column: 5 / span 1 ; grid-row: 3 / span 1;}
+.fa-jquery{
+ background: url('../images/jquery fa.png')  no-repeat center center/cover;
+}
+.fa-sql{
+ background: url('../images/sql2.png')  no-repeat center center/cover;
+}
+.fa-mongo{
+ background: url('../images/mongodb.png')  no-repeat center center/cover;
+}
+.fa-TS{
+ background: url('../images/typescript.png')  no-repeat center center/cover;
+}
+
+.languages{
+	border: none;
+  border-left: 6px solid #757575;
+  margin-bottom: 0px;
+  background-color: var(--primary-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  min-height: 119px;
+}
+.languages i{
+	font-size: 1.4em;
+  line-height: 1.4;
+  font-weight: 400;
+}
+/*Projects*/
+#projects{
+ display: grid;
+ align-items: center;
+ justify-content: center; 
+ grid-gap: 1rem;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ height: 100%; 
+}
+#projects a:hover{
+color: var(--whitesmoke-color);
+}
+#projects h3{
+ text-transform: capitalize;
+ font-size: 3rem;
+}
+
+#projects_tesla-site {grid-column: 2 / span 1 ; grid-row: 2 / span 1;}
+#projects_banff-page {grid-column: 3 / span 1 ; grid-row: 2 / span 1;}
+#more_projects       {grid-column: 2 / span 2 ; grid-row: 3 / span 1;}
+
+/*contact me*/
+#contactMe{
+ /*min-height: 65vh;*/
+ margin-bottom: 4rem;
+}
+#contactForm{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ flex-direction: row;
+}
+#contactForm > div{
+ padding: 0.5rem 4rem;
+}
+.callback-form{
+ width: 100%;
+ padding: 2rem 0;
+}
+.callback-form label{
+ display: block;
+ margin-bottom: 6px;
+}
+
+.callback-form .form-control{
+ margin-bottom: 1.5rem;
+}
+
+.callback-form input{
+ width: 100%;
+ padding: 4px;
+ height: 3rem;
+ border: var(--whitesmoke-color) 1px solid;
+}
+.callback-form input:focus{
+ outline-color: var(--footer-bg);
+}
+.callback-form .btn{
+ padding: 12xp;
+ margin-top: 2rem;
+}
+
+/*footer*/
+.footer{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ height: 200px;
+ background-color: var(--footer-bg);
+}
+.footer a{
+ color: var(--whitesmoke-color);
+}
+.footer a:hover{
+ color: var(--extra-color);
+}
+.footer .social > *{
+ margin-right: 30px;
+}
+.fa-2x{
+ font-size: 5rem;
+}
+
+.MongoDB, .MySql, .TypeScript, .JQuery{
+ padding-top: 4rem;
+}
+
+
+/*EXTAR DETAILS*/
+/*CV tooltip*/
+a[data-tooltip] {
+ position: relative;
+ text-decoration: none;
+}
+a[data-tooltip]:hover::before {
+ content: attr(data-tooltip);
+ position: absolute;
+ font-size: 10px;
+ left: 0;
+ padding: 5px;
+ width: max-content;
+ border-radius: 10px;
+ background:var(--extra-color);
+ color: var( --footer-bg);
+}
+a[data-tooltip]:hover::after {
+ content: "";
+ position: absolute;
+ left: 18px;
+ width: 0;
+ height: 0;
+ border-left: 5px solid transparent;
+ border-right: 5px solid transparent;
+ border-top: 10px solid var(--extra-color);
+}
+nav a[data-tooltip]:hover::before {
+ top: -18px
+}
+nav a[data-tooltip]:hover::after {
+ top: 1px;
+}
+#downlaodCV a[data-tooltip]:hover::before {
+ top: -30px
+}
+#downlaodCV a[data-tooltip]:hover::after {
+ top: -10px;
+}
+
+/*SOON tooltip*/
+.soon[data-tooltip] {
+ position: relative;
+ text-decoration: none;
+}
+.soon[data-tooltip]:hover::before {
+ content: attr(data-tooltip);
+ position: absolute;
+ font-size: 10px;
+ top: 20px;
+ left: 175px;
+ padding: 5px;
+ width: max-content;
+ border-radius: 10px;
+ background: var(--extra-color);
+ color: var( --footer-bg);
+}
+.soon[data-tooltip]:hover::after {
+ content: "";
+ position: absolute;
+ top: 40px;
+ left: 180px;
+ width: 0;
+ height: 0;
+ border-left: 5px solid transparent;
+ border-right: 5px solid transparent;
+ border-top: 10px solid var(--extra-color);
+}
+
+/*Mobile*/
+@media(max-width: 768px){
+ .navbar{
+  flex-direction: column;
+  height: 120px;
+  padding: 20px;
+ }
+ .navbar a{
+  padding: 10px 10px;
+  margin: 0 3px;
+ }
+ .headings            {grid-column: 1 / span 2 ; grid-row: 1 / span 1;}
+ /*skills*/
+#skills{
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.skills_fast-learner   {grid-column: 1 / span 1 ; grid-row: 2 / span 1;}
+.skills_problem-solver {grid-column: 2 / span 1 ; grid-row: 2 / span 1;}
+.skills_team-work      {grid-column: 1 / span 1 ; grid-row: 3 / span 1;}
+.skills_communication  {grid-column: 2 / span 1 ; grid-row: 3 / span 1;}
+.skills_mentor         {grid-column: 1 / span 1 ; grid-row: 4 / span 1;}
+
+/*languages*/
+#languages{
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/*Projects*/
+#projects{
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr; 
+}
+
+#projects_tesla-site {grid-column: 1 / span 1 ; grid-row: 2 / span 1;}
+#projects_banff-page {grid-column: 2 / span 1 ; grid-row: 2 / span 1;}
+#more_projects       {grid-column: 1 / span 2 ; grid-row: 3 / span 1;}
+
+}
