@@ -37,7 +37,7 @@
 .headings{
  text-transform: uppercase;
  font-size: 3rem;
- padding: 2rem 0;
+ padding: 2rem 0; /*no need for this padding when using Grid layout. but it looks better with it*/
 }
 .headings h2{
  display: grid;
