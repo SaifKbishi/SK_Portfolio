@@ -169,6 +169,15 @@ section{
 .fa-TS{
  background: url('../images/typescript.png')  no-repeat center center/cover;
 }
+.fa-AWS{
+ background: url('../images/AWS_Cloud.png')  no-repeat center center/cover;
+}
+.fa-Netlify{
+ background: url('../images/netlify.png')  no-repeat center center/cover;
+}
+.fa-RN{
+ background: url('../images/rn.png')  no-repeat center center/cover;
+}
 .moreTechno    {grid-column: 2 / span 4 ; grid-row: 4 / span 1; justify-self: center;}
 
 #moreTechno button{
@@ -210,6 +219,11 @@ color: var(--whitesmoke-color);
 #projects h3{
  text-transform: capitalize;
  font-size: 2rem;
+}
+
+.subProjects{
+  display: flex;
+ flex-direction: row;
 }
 /*
 #projects_tesla-site {grid-column: 2 / span 1 ; grid-row: 2 / span 1;}
@@ -599,13 +613,16 @@ nav a[data-tooltip]:hover::after {
   
   .projects {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: nowrap;
-    width: 100%;
+    /* width: 100%; */
   }
   #more_projects{
     width: unset;
+  }
+  .subProjects>*{
+    min-width: 400px;
   }
 }
 /*landscape*/
