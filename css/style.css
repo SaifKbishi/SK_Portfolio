@@ -281,7 +281,8 @@ color: var(--whitesmoke-color);
  font-size: 5rem;
 }
 
-.MongoDB, .MySql, .TypeScript, .JQuery{
+.MongoDB, .MySql, .TypeScript, .JQuery, .ReactNative,
+.Netlify, .AWS{
  padding-top: 4rem;
 }
 
