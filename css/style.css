@@ -567,6 +567,10 @@ nav a[data-tooltip]:hover::after {
   #projects h3{
     font-size: calc(2rem + 0.5vw);
   }
+  .aboutMe p{
+    font-size: calc(1.5rem + 0.5vw);
+    text-align: left;
+  }
  }
 
  @media (min-width: 1750px) {
@@ -578,6 +582,9 @@ nav a[data-tooltip]:hover::after {
   }
   #projects h3{
     font-size: 3rem;
+  }
+  .aboutMe{
+    font-size: 2.5rem;
   }
  }
 /**END**Truly fluid typography****/
