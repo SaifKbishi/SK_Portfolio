@@ -311,7 +311,8 @@ a[data-tooltip]:hover::before {
  content: attr(data-tooltip);
  position: absolute;
  font-size: 10px;
- left: 0;
+ left: 35px;
+ top:30px;
  padding: 5px;
  width: max-content;
  border-radius: 10px;
@@ -321,9 +322,11 @@ a[data-tooltip]:hover::before {
 a[data-tooltip]:hover::after {
  content: "";
  position: absolute;
- left: 18px;
+ left: 32px;
+ top:22px;
  width: 0;
  height: 0;
+ transform: rotate(150deg);
  border-left: 5px solid transparent;
  border-right: 5px solid transparent;
  border-top: 10px solid var(--extra-color);
@@ -499,6 +502,28 @@ nav a[data-tooltip]:hover::after {
   }
 }
 
+.neonText{
+  color: #FFF;
+  animation: neon 10s infinite alternate;
+}
+
+@keyframes neon {
+  0%, 10%, 20%, 40%, 60%, 80%, 100% {
+    filter: drop-shadow(0px 0px 1px #fff)
+    drop-shadow(0px 0px 3px #fff)
+    drop-shadow(0px 0px 10px #C09CCA)
+    drop-shadow(0px 0px 30px #73557B)
+    drop-shadow(0px 0px 50px #513D56);
+  }
+
+  30%, 50%, 70%, 90% {
+    filter:none;
+  }
+}
+.aboutMe{
+  font-size: 2.5rem;
+  max-width: 90%;
+}
 
 /*****************************************************/
 /*Mobile      ***********   SHOULD BE IMPROVED*/
