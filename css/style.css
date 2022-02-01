@@ -661,4 +661,10 @@ nav a[data-tooltip]:hover::after {
 @media(max-height:500px){
 
 }
+
+#canvas1{
+  position: fixed;
+  opacity: 0.3;
+}
+
 /*******************************************************************/
