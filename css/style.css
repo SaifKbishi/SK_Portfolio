@@ -550,7 +550,7 @@ nav a[data-tooltip]:hover::after {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
  }
- 
+
  .navbar{
    flex-direction: column;
   }  
@@ -610,6 +610,9 @@ nav a[data-tooltip]:hover::after {
   #projects{
     display: flex;
     flex-direction: column;
+  }
+  .languages{
+    min-height: 165px;;
   }
   
 }
